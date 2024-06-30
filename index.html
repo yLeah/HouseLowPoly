@@ -12,6 +12,13 @@
 
 <body>
     <a-scene>
+        <a-assets>
+            <a-asset-item id="houseInterior-obj" src="assets-obj/houseInterior.obj"></a-asset-item>
+            <a-asset-item id="houseInterior-mtl" src="assets-mtl/houseInteriorMaterials.mtl"></a-asset-item>
+        </a-assets>
+
+        <a-entity obj-model="obj: #houseInterior-obj; mtl: #houseInterior-mtl"></a-entity>
+        <a-box id="cube" class="clickable" position="-1 0.66921 -3" rotation="0 45 0" color="#4CC3D9" visible="true"></a-box>
         <a-entity environment="preset: default; groundTexture: walkernoise; groundColor: #41980a; groundColor2: #136d15"></a-entity>
     </a-scene>
 <body>
